@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+  <FrameLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/title_bar_left_menu"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/titlebar_menu_selector"/>
+
+    <TextView
+        android:id="@+id/toolbar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="7dp"
+        android:text="RESideMenu DEMO"
+        android:textColor="#999999"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/title_bar_right_menu"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/titlebar_menu_selector"/>
+  </FrameLayout>
+
+</android.support.v7.widget.Toolbar>
